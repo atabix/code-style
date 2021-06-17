@@ -20,7 +20,7 @@ return $config
     ->setRules([
         '@PSR12'          => true,
         '@PHP80Migration' => true,
-        'binary_operator_spaces'                      => [
+        'binary_operator_spaces' => [
             'operators' => [
                 '=>' => 'align_single_space_minimal'
             ]
