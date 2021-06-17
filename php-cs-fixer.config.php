@@ -25,5 +25,6 @@ return $config
                 '=>' => 'align_single_space_minimal'
             ]
         ],
+        'ordered_imports' => ['sortAlgorithm' => 'alpha'],
     ])
     ->setFinder($finder);
