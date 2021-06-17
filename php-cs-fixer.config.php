@@ -1,4 +1,5 @@
 <?php
+
 $finder = PhpCsFixer\Finder::create()
     ->notPath('.ebextensions')
     ->notPath('.elasticbeanstalk')
@@ -11,7 +12,9 @@ $finder = PhpCsFixer\Finder::create()
     ->notName('*.blade.php')
     ->ignoreDotFiles(true)
     ->ignoreVCS(true);
+
 $config = new PhpCsFixer\Config();
+
 return $config
     ->setCacheFile(__DIR__ . '/vendor/.php_cs.cache')
     ->setRules([
