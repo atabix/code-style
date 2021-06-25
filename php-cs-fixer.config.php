@@ -29,6 +29,7 @@ return $config
         'ordered_imports'                             => ['sort_algorithm' => 'alpha'],
         'no_unused_imports'                           => true,
         'no_superfluous_phpdoc_tags'                  => ['allow_mixed' => true],
+        'blank_line_before_statement'                 => true,
         'no_blank_lines_after_class_opening'          => true,
         'no_blank_lines_after_phpdoc'                 => true,
         'no_closing_tag'                              => true,
