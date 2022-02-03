@@ -60,6 +60,6 @@ return $config
 		'phpdoc_trim'                                 => true,
 		'phpdoc_types'                                => true,
 		'phpdoc_var_without_name'                     => true,
-		'types_spaces'				      => ['space' => 'none']
+		'types_spaces'                                => ['space' => 'none']
 	])
 	->setFinder($finder);
