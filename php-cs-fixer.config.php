@@ -46,6 +46,7 @@ return $config
 		'no_unused_imports'                           => true,
 		'no_useless_return'                           => true,
 		'no_whitespace_before_comma_in_array'         => true,
+		'not_operator_with_successor_space'           => true,
 		'ordered_imports'                             => ['sort_algorithm' => 'alpha'],
 		'phpdoc_align'                                => true,
 		'phpdoc_indent'                               => true,
