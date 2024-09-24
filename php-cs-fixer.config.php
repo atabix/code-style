@@ -15,7 +15,6 @@ $finder = (new PhpCsFixer\Finder())
 
 return (new PhpCsFixer\Config())
 	->setCacheFile(__DIR__ . '/vendor/.php_cs.cache')
-	->setParallelConfig(PhpCsFixer\Runner\Parallel\ParallelConfigFactory::detect())
 	->setRules([
 		'@PSR12'          => true,
 		'@PHP80Migration' => true,
