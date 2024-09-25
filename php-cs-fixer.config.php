@@ -1,6 +1,6 @@
 <?php
 
-$finder = (new PhpCsFixer\Finder())
+$finder = PhpCsFixer\Finder::create()
 	->notPath('.ebextensions')
 	->notPath('.elasticbeanstalk')
 	->notPath('docs')
@@ -13,9 +13,10 @@ $finder = (new PhpCsFixer\Finder())
 	->ignoreDotFiles(true)
 	->ignoreVCS(true);
 
-return (new PhpCsFixer\Config())
+$config = new PhpCsFixer\Config();
+
+return $config
 	->setCacheFile(__DIR__ . '/vendor/.php_cs.cache')
-	->setParallelConfig(PhpCsFixer\Runner\Parallel\ParallelConfigFactory::detect())
 	->setRules([
 		'@PSR12'          => true,
 		'@PHP80Migration' => true,
