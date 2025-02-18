@@ -18,8 +18,8 @@ $config = new PhpCsFixer\Config();
 return $config
 	->setCacheFile(__DIR__ . '/vendor/.php_cs.cache')
 	->setRules([
-		'@PSR12'          => true,
-		'@PHP80Migration' => true,
+		'@PER-CS'         => true,
+		'@PHP84Migration' => true,
 		'binary_operator_spaces' => [
 			'operators' => [
 				'=>' => 'align_single_space_minimal'
