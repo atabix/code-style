@@ -17,7 +17,7 @@ $config = new PhpCsFixer\Config();
 
 return $config
     ->setCacheFile(__DIR__ . '/vendor/.php_cs.cache')
-  	->setParallelConfig(PhpCsFixer\Runner\Parallel\ParallelConfigFactory::detect())
+    ->setParallelConfig(PhpCsFixer\Runner\Parallel\ParallelConfigFactory::detect())
     ->setRules([
         '@PER-CS'                => true,
         '@PHP84Migration'        => true,
@@ -48,7 +48,7 @@ return $config
         'no_useless_return'                           => true,
         'no_whitespace_before_comma_in_array'         => true,
         'not_operator_with_successor_space'           => true,
-        'ordered_imports'                             => ['sort_algorithm' => 'alpha'],
+        'ordered_imports'                             => ['sort_algorithm' => 'alpha', 'imports_order' => ['const', 'class', 'function']],
         'phpdoc_align'                                => true,
         'phpdoc_indent'                               => true,
         'phpdoc_line_span'                            => ['method' => 'single', 'const' => 'single', 'property' => 'single'],
