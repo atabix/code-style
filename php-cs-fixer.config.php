@@ -63,5 +63,6 @@ return $config
         'phpdoc_types'                                => true,
         'phpdoc_var_without_name'                     => true,
         'types_spaces'                                => ['space' => 'none'],
+        'new_expression_parentheses'                  => ['use_parentheses' => true],
     ])
     ->setFinder($finder);
