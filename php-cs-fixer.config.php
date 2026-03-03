@@ -51,7 +51,7 @@ return $config
         'ordered_imports'                             => ['sort_algorithm' => 'alpha', 'imports_order' => ['const', 'class', 'function']],
         'phpdoc_align'                                => true,
         'phpdoc_indent'                               => true,
-        'phpdoc_line_span'                            => ['method' => 'single', 'const' => 'single', 'property' => 'single', 'class' => 'single'],
+        'phpdoc_line_span'                            => ['method' => 'single', 'const' => 'single', 'property' => 'single', 'class' => 'single', 'case' => 'single', 'other' => 'single', 'trait_import' => 'single'],
         'phpdoc_no_access'                            => true,
         'phpdoc_no_package'                           => true,
         'phpdoc_order'                                => true,
